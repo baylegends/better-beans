@@ -12,7 +12,6 @@ const Layout = ({ children }) => {
       <div className={theme}>
         <Header toggleTheme={setTheme} />
         <main className="main">{children}</main>
-        <Footer />
       </div>
     </>
   );

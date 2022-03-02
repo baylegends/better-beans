@@ -122,9 +122,6 @@ export default function Profile() {
           }
         }
       >
-        <Link href="easteregg">
-          the very best
-        </Link>
       </button>
     </div>
   );
