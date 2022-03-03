@@ -13,7 +13,7 @@ export default function Home() {
         Local Coffee Shops Today!
       </h1>
       <div className="over" />
-      <ReactPlayer url="../production ID_4820352.mp4" playing loop muted />
+      <ReactPlayer playsInline url="../production ID_4820352.mp4" playing loop muted />
       {/* <ReactPlayer url="../production ID_4820350.mp4" playing="true" loop="true" /> */}
       {/* <ReactPlayer url="../production ID_4820349.mp4" playing="true" loop="true" /> */}
       {/* <ReactPlayer url="../production ID_4815783.mp4" playing="true" loop="true" /> */}

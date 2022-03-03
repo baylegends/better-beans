@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Search from './Search';
 import { SearchContext } from './SearchContext';
 import { useAuth } from '../firebase/auth_context';
+import { GiCoffeeBeans } from 'react-icons/gi';
 
 export default function Header(props) {
   const { authUser, logOff } = useAuth();
@@ -32,7 +33,11 @@ export default function Header(props) {
           <div id="nav">
             <Link href="/">
               <a href="/" aria-label="logo">
-                <div className="logo" />
+                {/* <div className="logo" /> */}
+                <div className="logo">
+                <GiCoffeeBeans size={50} color={"#440C04"}/>
+                <p id="logoText">Better Beans</p>
+                </div>
               </a>
             </Link>
             <div className="mode">

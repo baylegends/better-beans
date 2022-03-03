@@ -35,15 +35,21 @@ class Map extends Component {
     }
   }
 
+
   changeCenter() {
     const { coords } = this.props;
     map.panTo(coords);
   }
 
+
   initMap() {
     const { coords, google } = this.props;
+    const newCoords = {
+      lat: 37.7815,
+      lng: -122.4156
+    }
     map = new google.maps.Map(document.getElementById('map'), {
-      center: coords,
+      center: newCoords,
       zoom: 14,
       mapTypeControl: false,
       streetViewControl: false,

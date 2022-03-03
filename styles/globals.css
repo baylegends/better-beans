@@ -9,6 +9,7 @@ white: #FFF
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 
 html, body, p, div, h1, h2, h3, h4 {
   margin: 0px;
@@ -96,17 +97,32 @@ header {
 }
 
 #nav .logo {
-  background: url('../public/betterbean-logo.png') no-repeat center;
+  /* background: url('../public/new-logo.png') no-repeat center;
   background-size: cover;
-  width: 100px;
-  height: 67px;
+  width: 75px;
+  height: 75px; */
   float: left;
   transform: scale(1);
   transition: 0.8s ease-out;
   transition: 0.8s ease-out;
-  border: 1px solid #602d26;
+  z-index: 8;
+ /* border: 1px solid #602d26;
   border-radius: 60%;
-  box-shadow: 1px 1px 5px 1px #835757;
+  box-shadow: 1px 1px 5px 1px #835757;  */
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+#logoText {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Leckerli One', cursive;
+  margin-left: 3%;
 }
 
 #nav .logo:hover  {
