@@ -40,7 +40,7 @@ export default function Header(props) {
                 </div>
               </a>
             </Link>
-            <div className="mode">
+            {/* <div className="mode">
               <input
                 type="checkbox"
                 id="toggle"
@@ -51,7 +51,7 @@ export default function Header(props) {
               <label htmlFor="toggle" className="toggle--label">
                 <span className="toggle--label-background" />
               </label>
-            </div>
+            </div> */}
             <div className="loginBtn">
               {(authUser) ? (
                 <Link href="/profile">
